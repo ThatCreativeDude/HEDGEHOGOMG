@@ -5,32 +5,73 @@
 <style>
 body{
 font-family:"Comic Sans MS";
-background:rgb(15, 125, 209);
+background:rgb(15, 125, 209); 
 }
-.grass {
-    height: 50px; 
-    background-color: rgb(42, 178, 0); }
-.grassier{
-       height: 100px; 
-    background-color: rgb(17, 77, 0); } 
-.dirt{
-           height: 100px; 
-    background-color: rgb(176, 88, 0); 
+
+.AutosizeText{
+       font-size: 1.7vw;
+       padding-left: 15px;
+       padding-top: 15px;
 }
-.dirttier{
-           height: 100px; 
-    background-color: rgb(62, 31, 0); 
+.coolcolor {
+  font-size: 24px;
+  animation: color-change 3s infinite alternate;
 }
+
+@keyframes color-change {
+  from {
+    color: rgb(255, 0, 0);
+  }
+  to {
+    color: green; 
+  }
+}
+.animatesonic{
+    position: absolute;
+    animation-name: move-and-flip;
+    top: 100px;    
+    left: 0px;       
+     animation-duration: 3.1415s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+}
+@keyframes move-and-flip {
+    0% {
+        left: 0px;
+        transform: scaleX(1);
+    }
+    49% {
+        left: calc(100% - 99px);
+        transform: scaleX(1);   
+    }
+    50% {
+        left: calc(100% - 99px);
+        transform: scaleX(-1); 
+    }
+    100% {
+        left: 0px;
+        transform: scaleX(-1);
+    }}
 </style>
 </head>
 
 <body>
- <center>   <h1>Sonic The Hedgehog</h1> <br>
-<img src="files\sonic-is-runinng-run.gif" alt="hawktuah"></center>
-    <div class="grass">
+    <img src="files\cloud-in-pixel-art-style-png.png" style="height: 100px;width: 244px;padding-left: 25px;padding-top: 25px;float: left;" >
+    <img src="files\cloud-in-pixel-art-style-png.png" style="height: 100px;width: 244px;padding-right: 25px;padding-top: 25px;float: right;" >
+ <center>   <h1 style="padding-bottom:70px;" class="coolcolor">Sonic The Hedgehog</h1> <br>
+</center><br><br><br><br>
+<img class="animatesonic" src="files\sonic-is-runinng-run.gif" alt="hawktuah" style="padding-top: 50px;" height="100px" width="99px">
+    <div class="AutosizeText" style="border-top-left-radius: 5px; border-top-right-radius: 5px; height: 75px; background-color: rgb(42, 178, 0);"> 
+        Sonic is a fast blue hedgehog, who runs to help and save his little animal friends from the EVIL doctor Robotnik.
     </div>
-    <div class="grassier" ></div>
-    <div class="dirt" ></div>
-    <div class="dirttier" ></div>
+    <div style="color: white; height: 140px;background-color: rgb(17, 77, 0);" class="AutosizeText" > 
+        I am personally a HUGE sonic fan, its crazy how the Sega Genesis was competing with the biggest console at the time - The nintendo entertaining system - ,and surprisingly it really built up really great competition and grew a very nice fanbase.
+    </div>
+    <div class="AutosizeText" style="color: white; height: 70px; background-color: rgb(176, 88, 0);" >
+        You know what else I like, probably <strong><a href="https://www.youtube.com/watch?v=hdxYROhhgVE" style="color: yellow;">fried chicken.</a></strong> another reason for my obsession for sonic is <a href="https://www.youtube.com/shorts/AwWYArqjF40" style="color: white;">because-</a>
+    </div>
+    <div class="AutosizeText" style=" height: 200px; background-color: rgb(62, 31, 0); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;" >
+      <center> <img width="196px"height="182px" src="files\Sanic.webp" alt="sanic real"><img width="196px"height="182px" src="files\Sanic.webp" alt="sanic real"><img width="196px"height="182px" src="files\Sanic.webp" alt="sanic real"><img width="196px"height="182px" src="files\Sanic.webp" alt="sanic real"><img width="196px"height="182px" src="files\Sanic.webp" alt="sanic real"><img width="196px"height="182px" src="files\Sanic.webp" alt="sanic real"><img width="196px"height="182px" src="files\Sanic.webp" alt="sanic real"><img width="196px"height="182px" src="files\Sanic.webp" alt="sanic real">  </center>
+    </div>
 </body>
-</html>
+</html> 
